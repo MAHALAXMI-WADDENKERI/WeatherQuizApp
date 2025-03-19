@@ -1,21 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .container {
     max-width: 400px;
-    margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background: rgba(241, 236, 236, 0.433);
     border-radius: 10px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
+
 .option {
     display: block;
-    margin: 10px 0;
-}
-button {
-    padding: 10px 15px;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.432);
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
