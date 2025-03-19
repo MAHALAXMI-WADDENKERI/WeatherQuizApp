@@ -1,32 +1,77 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    max-width: 400px;
+    margin: 0;
     padding: 20px;
-    background: rgba(241, 236, 236, 0.433);
-    border-radius: 10px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Quiz Container */
+.container {
+    max-width: 90%;
+    width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Options Buttons */
 .option {
     display: block;
-    padding: 10px;
-    margin: 5px 0;
-    background: rgba(255, 255, 255, 0.432);
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.25);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    color: white;
 }
 
 .option:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Next Button */
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #20228b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #0a0701;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .option, button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
